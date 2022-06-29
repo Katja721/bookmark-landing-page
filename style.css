@@ -24,13 +24,23 @@ header {
   color: var(--very-dark-blue);
   margin: 0 1rem;
 }
+.navItem:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
 .loginBtn {
   background-color: var(--soft-red);
   color: var(--white);
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 700;
+}
+.loginBtn:hover {
+  color: var(--soft-red);
+  background-color: var(--white);
+  border: 2px solid var(--soft-red);
+  cursor: pointer;
 }
 .heroSection {
   display: flex;
@@ -64,6 +74,12 @@ header {
   border-radius: 5px;
   margin: 0 0.3rem 0 0;
 }
+.chromeBtn:hover {
+  background-color: var(--white);
+  color: var(--soft-blue);
+  cursor: pointer;
+  border: 2px solid var(--soft-blue);
+}
 .firefoxBtn {
   background-color: var(--white);
   color: var(--grayish-blue);
@@ -72,6 +88,14 @@ header {
   border: none;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.5) 0px 4px 4px;
+}
+.firefoxBtn:hover {
+  border: 2px solid var(--grayish-blue);
+  cursor: pointer;
+}
+.featureItem:hover {
+  color: var(--soft-red);
+  cursor: pointer;
 }
 .heroParagraph {
   color: var(--grayish-blue);
@@ -201,6 +225,13 @@ header {
   border-radius: 5px;
   background-color: var(--soft-blue);
   color: var(--white);
+  font-weight: 700;
+}
+.installExtension:hover {
+  border: 2px solid var(--soft-blue);
+  background-color: var(--white);
+  color: var(--soft-blue);
+  cursor: pointer;
 }
 .faq {
   margin: 13rem 24rem 10rem 24rem;
@@ -225,11 +256,32 @@ header {
   padding: 1rem 0;
   margin: 0;
 }
+.question:hover {
+  color: var(--soft-red);
+}
 .questionBox:first-child {
   border-top: 1px solid var(--grayish-blue);
 }
 .arrow-icon {
-  height: fit-content;
+  color: var(--soft-blue);
+}
+.error-icon {
+  position: relative;
+  left: -9.5rem;
+  top: 0.3rem;
+}
+.error-paragraph {
+  margin: 0;
+  text-align: left;
+  font-size: 0.6em;
+  position: relative;
+  top: -2rem;
+  left: 0.3rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  background-color: var(--soft-red);
+  width: 56%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .faqBtn {
   margin: 0 13rem;
@@ -280,6 +332,10 @@ footer {
   font-variant-caps: all-petite-caps;
   font-size: 0.9em;
 }
+.navItem-footer:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
 .contactBtn {
   background-color: var(--soft-red);
   padding: 0.6rem 1rem;
@@ -289,10 +345,26 @@ footer {
   font-weight: 500;
   margin: 0 0.5rem;
 }
+.contactBtn:hover {
+  border: 2px solid var(--soft-red);
+  background-color: var(--white);
+  color: var(--soft-red);
+  cursor: pointer;
+}
 .icon-social {
   font-size: 1.3em;
   color: var(--white);
   margin: 0 1rem;
+}
+.icon-social:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
+.answer {
+  color: var(--grayish-blue);
+  line-height: 2em;
+  margin: 0;
+  padding: 0 0 1rem 0;
 }
 .unactive {
   display: none;
