@@ -604,3 +604,51 @@ footer {
     display: none;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  header {
+    margin: 3rem 3rem;
+  }
+  .heroText {
+    margin: 0 4rem 0 3rem;
+  }
+  .heroButtons {
+    width: max-content;
+  }
+  .featuresParagraph {
+    margin: 0 5rem;
+  }
+  .featureImg {
+    height: fit-content;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .featureText {
+    margin: 3rem 5rem 2rem 0rem;
+  }
+  .extensionParagraph {
+    margin: 0 10rem;
+  }
+  .browser {
+    width: 25%;
+  }
+  .faq {
+    margin: 8rem 12rem 10rem 12rem;
+  }
+  .faqBtn {
+    margin: 0 8rem;
+  }
+  .contactSection {
+    padding: 2rem 13rem;
+  }
+  .social {
+    display: flex;
+  }
+  footer {
+    padding: 1rem 3rem;
+  }
+  .answer {
+    line-height: 1.5em;
+    font-size: 0.9em;
+  }
+}
