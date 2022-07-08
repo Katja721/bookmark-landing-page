@@ -7,9 +7,21 @@ const [...answers] = document.querySelectorAll(".answer");
 const [...arrows] = document.querySelectorAll(".arrow-icon");
 const emailInput = document.querySelector(".emailInput");
 const contactBtn = document.querySelector(".contactBtn");
+const [...activeLine] = document.querySelectorAll(".activeLine");
+const header = document.querySelector("header");
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const close = document.querySelector(".close-icon");
+const menuMobile = document.querySelector(".menu-headerMobile");
+const logoMobile = document.querySelector(".menu-logo");
+let logoHeader = document.querySelector(".logo-header");
 const changeNavItem = function (click) {
   featureItems.forEach((item) => item.classList.remove("activeFeature"));
+  activeLine.forEach((line) => line.classList.add("hidden"));
   click.closest(".featureItem").classList.add("activeFeature");
+  click
+    .closest(".featureBox")
+    .querySelector(".activeLine")
+    .classList.remove("hidden");
 };
 const toggleFeaturesText = function (element) {
   const index = featureItems.indexOf(element);
@@ -67,6 +79,21 @@ contactBtn.addEventListener("click", function (e) {
   if (emailRegex.test(email)) return;
   errorIcon.classList.remove("hidden");
   emailChange("0px", "1px solid var(--soft-red)");
-
   errorParagraph.classList.remove("hidden");
+});
+hamburgerIcon.addEventListener("click", function () {
+  header.classList.add("menuActive");
+  hamburgerIcon.classList.add("hidden");
+  close.classList.remove("hidden");
+  menuMobile.classList.remove("hidden");
+  logoHeader.classList.add("hidden");
+  logoMobile.classList.remove("hidden");
+});
+close.addEventListener("click", function () {
+  hamburgerIcon.classList.remove("hidden");
+  close.classList.add("hidden");
+  header.classList.remove("menuActive");
+  menuMobile.classList.add("hidden");
+  logoHeader.classList.remove("hidden");
+  logoMobile.classList.add("hidden");
 });
