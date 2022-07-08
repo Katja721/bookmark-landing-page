@@ -6,10 +6,14 @@
   --very-dark-blue: hsl(229, 31%, 21%);
   --white: #ffffff;
 }
+html {
+  overflow: auto;
+}
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   margin: 0;
+  overflow-x: hidden;
 }
 header {
   display: flex;
@@ -60,7 +64,7 @@ header {
   position: absolute;
   z-index: -1;
   height: 21rem;
-  width: 40rem;
+  width: 30rem;
   border-bottom-left-radius: 180px;
   left: 52rem;
   top: 17rem;
@@ -382,7 +386,7 @@ footer {
 .mobile {
   display: none;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .desktop {
     display: none;
   }
@@ -604,6 +608,232 @@ footer {
     display: none;
   }
 }
+@media screen and (max-width: 500px) and (min-width: 400px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: initial;
+  }
+  .menu-headerMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .navItemMobile {
+    color: var(--white);
+    margin: 0.1rem 0 1rem 0;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 400;
+    padding: 0 0 1rem 0;
+  }
+  .loginBtn {
+    background: none;
+    border: 2px solid var(--white);
+    font-size: 1.2em;
+    margin: 1rem 0;
+  }
+  header {
+    margin: 3rem 2rem;
+    position: initial;
+  }
+  .menuActive {
+    background-color: hsla(229, 31%, 21%, 0.9);
+    margin: 0;
+    padding: 3rem;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 83%;
+    justify-content: flex-start;
+  }
+  .hamburger-icon {
+    height: fit-content;
+    width: fit-content;
+  }
+  .close-icon {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 25rem;
+  }
+  .menu-logo {
+    width: fit-content;
+    margin: 0 0 2rem 0;
+  }
+  .logo-header {
+    height: fit-content;
+    width: fit-content;
+  }
+  .heroSection {
+    flex-direction: column-reverse;
+  }
+  .heroImg {
+    width: 90%;
+  }
+  .ilustratinHero {
+    height: 14rem;
+    width: 23rem;
+    border-bottom-left-radius: 120px;
+    left: 5rem;
+    top: 12rem;
+  }
+  .heroButtons {
+    justify-content: center;
+    display: flex;
+  }
+  .heroText {
+    margin: 5rem 2rem;
+  }
+  .heroHeading {
+    text-align: center;
+    font-size: 1.7em;
+  }
+  .heroParagraph {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .featuresMenu {
+    margin: 3rem 2rem;
+    text-align: center;
+  }
+  .first {
+    border-top: 1px solid var(--grayish-blue);
+  }
+
+  .featuresParagraph {
+    margin: 0 0.6rem;
+    line-height: 1.5em;
+    font-size: 0.9em;
+  }
+  .featuresMenu {
+    flex-direction: column;
+    margin: 3rem 0rem;
+  }
+  .featureItem {
+    padding: 1rem;
+    margin: 0 2rem;
+  }
+  .activeLine {
+    background-color: var(--soft-red);
+    width: 16rem;
+    height: 3px;
+    display: block;
+    position: relative;
+    left: 6rem;
+    top: -0.25rem;
+  }
+  .activeFeature {
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+  .featureImg {
+    width: 90%;
+  }
+  .feature {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
+  .featureText {
+    margin: 3rem 3rem 3rem 1rem;
+    font-size: 0.9em;
+  }
+  .featureHEading {
+    width: 110%;
+  }
+  .extensionParagraph {
+    margin: 0;
+  }
+  .browsers {
+    flex-direction: column;
+    margin: 0;
+  }
+  .faq {
+    margin: 9rem 2rem 10rem 2rem;
+  }
+  .faqParagraph {
+    font-size: 0.82em;
+  }
+  .faqBtn {
+    margin: 0 6rem;
+  }
+  .contactSection {
+    font-size: 0.9em;
+    padding: 2rem 1rem;
+  }
+  .browser {
+    margin: 1rem 4rem 1rem 3.5rem;
+    width: 72%;
+  }
+  .question {
+    font-size: 0.8em;
+  }
+  .answer {
+    font-size: 0.9em;
+    line-height: 1.8em;
+  }
+  .menu-footer {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .social {
+    display: flex;
+  }
+  .navItem-footer {
+    margin: 1rem 0 1rem 0.5rem;
+    text-align: center;
+  }
+  .logo-footer {
+    margin: 1rem 0;
+  }
+  .social {
+    margin: 1rem 0;
+  }
+  .social-mobile {
+    text-align: center;
+    margin: 7rem 0;
+    font-size: 1.2em;
+  }
+  .ilustratiionFeatures {
+    width: 40rem;
+    border-bottom-right-radius: 180px;
+    left: -21rem;
+    height: 13rem;
+    top: 78.3rem;
+  }
+  .featureImg {
+    width: 83%;
+    margin: 0 2rem;
+  }
+  .emailInput {
+    width: 92%;
+    margin: 0 0 1.5rem 0;
+  }
+  .error-paragraph {
+    top: -5.2rem;
+    left: 0rem;
+    width: 95.3%;
+    margin: 1rem 0;
+  }
+  .contactBtn {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navItemMobile {
+    border-bottom: 1px solid var(--grayish-blue);
+  }
+
+  .unactive {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+}
 @media screen and (min-width: 500px) and (max-width: 1000px) {
   header {
     margin: 3rem 3rem;
@@ -650,5 +880,9 @@ footer {
   .answer {
     line-height: 1.5em;
     font-size: 0.9em;
+  }
+  .ilustratinHero {
+    left: 32rem;
+    width: 16rem;
   }
 }
